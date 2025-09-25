@@ -1,0 +1,11 @@
+enable
+configure terminal
+vlan 10
+name Sales
+vlan 20
+name IT
+interface range fa0/1-6
+switchport mode trunk
+exit
+end
+show spanning-tree
