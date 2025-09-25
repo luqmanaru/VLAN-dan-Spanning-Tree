@@ -1,0 +1,13 @@
+enable
+configure terminal
+interface range fa0/1-6
+switchport mode trunk
+exit
+vlan 10
+name Sales
+vlan 20
+name IT
+exit
+spanning-tree vlan 1 priority 4096
+end
+show spanning-tree
